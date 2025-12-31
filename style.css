@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-family: Ubuntu;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+.header {
+  background: steelblue;
+  color: white;
+
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(253, 253, 253);
+  border-top: 10px solid steelblue;
+  border-bottom: 2px solid steelblue;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-area img {
+  width: 100px;
+  height: 100px;
+  
+}
+
+
+.goldvine {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    color: steelblue;
+}
+
+.school {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    color: gold;
+}
+
+.contact-area {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+}
+
+.contact-area i {
+    color: steelblue;
+    font-size: 2rem;
+}
+
+.contact-text {
+    color: steelblue;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: steelblue;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.hamburger:hover {
+  transform: scale(1.1);
+}
+
+/* NAV */
+.bottom-header {
+  display: flex;
+  justify-content: center;
+  background: #4682b4;
+}
+
+.bottom-header a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  transition: 0.3s, transform 0.3s;
+}
+
+.bottom-header a:hover {
+  background: gold;
+  color: black;
+  transform: translateY(-3px);
+}
+
+/* HERO */
+.hero {
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: wheat;
+  background-image: url("../img/students.png");
+  background-size: cover;
+  background-position: center up;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero-content {
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.6);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.hero-content h2 {
+    font-family: Playfair;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+    font-family: Ubuntu;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.hero-content .chat-us {
+  margin-top: 10px;
+  padding: 14px 30px;
+  background: #25d366;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.chat-us:hover {
+    
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(37, 211, 102, 0.6);
+
+
+}
+
+.hero-content a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* QUOTES */
+.quotes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  gap: 20px;
+  justify-content: center;
+  padding: 30px;
+}
+
+.quote-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;  
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-top: -3rem;
+}
+
+.quote-box i {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.quote-box p {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.quote-box:first-child {
+    background: teal;
+}
+
+.quote-box:nth-child(2) {
+    background: gold;
+}
+
+.quote-box:nth-child(3) {
+    background: steelblue;
+}
+
+.quote-box:last-child {
+    background: rgb(6, 201, 6);
+}
+
+
+
+/* ABOUT */
+
+/* About Section */
+.about {
+  background-color: #eef5f9; /* light steelblue-friendly background */
+  padding: 60px 20px;
+  margin-top: 4rem;
+}
+
+/* Center content on desktop */
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Main heading */
+.about h2 {
+  font-family: Playfair;
+  text-align: center;
+  color: steelblue;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+/* Sub-headings */
+.about h3 {
+  font-family: Playfair;
+  text-align: center;
+  color: #2f4f6f;
+  margin: 30px 0 10px;
+  font-size: 1.4rem;
+}
+
+/* Paragraphs */
+.about .paragraph {
+  text-align: justify;
+  line-height: 1.7;
+  color: #333;
+  font-family: Ubuntu;
+  font-size: 1rem;
+}
+
+
+/* Core Values Section */
+.core-values {
+  padding: 60px 20px;
+  background-color: #f5f9fc; /* gentle blue-grey background */
+}
+
+/* Centered card-like container */
+.core-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(70, 130, 180, 0.12); /* steelblue soft shadow */
+}
+
+/* Heading */
+.core-values h2 {
+  text-align: center;
+  color: steelblue;
+  font-family: Playfair;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* List reset */
+.core-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* List items */
+.core-list li {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 22px;
+  line-height: 1.6;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Custom bullet */
+.core-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: steelblue;
+  font-size: 1.1rem;
+}
+
+/* Highlight value names */
+.core-list strong {
+  color: #2f4f6f;
+}
+
+
+
+/* Directors Section */
+.directors {
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Shared box styles */
+.director-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: wheat;
+  padding: 40px;
+  border-radius: 14px;
+  gap: 30px;
+}
+
+.director-box h3 {
+  margin-left: 2rem;
+}
+
+.name {
+    margin-left: 5rem;
+}
+/* Images */
+.directors img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Text containers */
+.director-text {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Headings */
+.directors h3 {
+  color: #6b4f1d;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+/* Paragraphs */
+.directors p {
+  line-height: 1.6;
+  color: black;
+  font-size: 1rem;
+}
+
+/* Name styling */
+.directors .name {
+  margin-top: 12px;
+  font-weight: bold;
+  color: #5a3e14;
+}
+
+/* Proprietress box (same style as Director) */
+.proprietress-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: wheat;
+  padding: 40px;
+  border-radius: 14px;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+/* Flip layout for proprietress */
+.director-box.reverse {
+  flex-direction: row-reverse;
+}
+
+
+
+.why-choose-us {
+  width: 100%;
+  padding: 4rem 1.5rem;
+  background: linear-gradient(
+    135deg,
+    #f4f8fb 0%,
+    #e8f0f7 100%
+  );
+}
+
+.why-choose-us h2 {
+  text-align: center;
+  color: steelblue;
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+  font-family: Playfair;
+  font-weight: 700;
+}
+
+.why-list {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.why-list li {
+  font-family: Ubuntu;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+  padding-left: 1.8rem;
+  position: relative;
+}
+
+/* custom bullet */
+.why-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  color: steelblue;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+
+/* Admission Section */
+.admission {
+  padding: 60px 20px;
+  background-color: #f5f9fc;
+}
+
+/* Card */
+.admission-box {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: wheat;
+  padding: 40px 30px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+.admission-box h2 {
+  color: #6b4f1d;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Text */
+.admission-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.admission-note {
+  margin-top: 10px;
+  color: #444;
+}
+
+/* Button */
+.admission-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+  padding: 12px 22px;
+  background-color: #25d366; /* WhatsApp green */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admission-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(37, 211, 102, 0.35);
+}
+
+
+
+
+/* ================= SLIDER ================= */
+
+/* Slider Section */
+.slider-section {
+  padding: 60px 20px;
+  background-color: #eef5f9;
+}
+
+/* Title */
+.slider-title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: steelblue;
+}
+
+/* Container */
+.slider-container {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* Track */
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* Images */
+.slider-track img {
+  width: 100%;
+  flex-shrink: 0;
+  aspect-ratio: 16/12; 
+}
+
+/* Buttons */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.slider-btn.prev {
+  left: 10px;
+}
+
+.slider-btn.next {
+  right: 10px;
+}
+
+
+/* FOOTER */
+footer {
+  background: steelblue;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+

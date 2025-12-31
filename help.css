@@ -1,0 +1,93 @@
+/* ===== DONATION SECTION ===== */
+.donation-section {
+  padding: 90px 20px;
+  background: #f5f7fa;
+  display: flex;
+  justify-content: center;
+}
+
+.donation-container {
+  max-width: 750px;
+  width: 100%;
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* ===== HEADINGS ===== */
+.donation-container h1 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: steelblue;
+}
+
+.donation-lead {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-bottom: 25px;
+  color: #374151;
+}
+
+/* ===== TEXT ===== */
+.donation-container p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* ===== DONATE ACTION ===== */
+.donation-action {
+  margin-top: 40px;
+}
+
+/* ===== DONATE BUTTON (SAME STYLE AS MAKE PAYMENT) ===== */
+.donate-btn {
+  display: inline-block;
+  padding: 15px 44px;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: bold;
+  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.donate-btn:hover {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 14px 32px rgba(37, 99, 235, 0.5);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .donation-container {
+    padding: 35px 20px;
+  }
+
+  .donation-container h1 {
+    font-size: 2rem;
+  }
+
+  .donation-lead {
+    font-size: 1.05rem;
+  }
+
+  .donation-container p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .donation-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .donate-btn {
+    padding: 13px 36px;
+    font-size: 1.05rem;
+  }
+}

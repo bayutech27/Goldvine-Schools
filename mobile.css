@@ -1,0 +1,336 @@
+/* =========================
+   BASE (ALL SCREENS)
+========================= */
+
+/* Ensure text is centered beside the image */
+.director-text,
+.proprietress-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+}
+
+/* Text area */
+.proprietress-text {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Image */
+.proprietress-box img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+
+
+/* =========================
+   DESKTOP (≥ 1024px)
+========================= */
+
+/* Limit paragraph width on larger screens */
+@media (min-width: 1024px) {
+   
+    .quotes{
+
+      display: flex;
+    }
+  
+  
+  
+  
+  .hero {
+    background-size: cover;
+    background-position: center top;
+    height: 500px;
+    padding: 40px 15px;
+  }
+
+  .hero {
+    text-align: center;
+  }
+  
+  .about .paragraph {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .director-box,
+  .proprietress-box {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .proprietress-box {
+    max-width: 700px;
+  }
+}
+
+/* Extra safety for very wide screens */
+@media (min-width: 1430px) {
+  .about .paragraph {
+    max-width: 700px;
+  }
+}
+
+
+
+/* =========================
+   TABLET & MOBILE (≤ 768px)
+========================= */
+
+@media (max-width: 768px) {
+  
+   .hero {
+    background-size: cover;
+    background-position: center top;
+    height: auto;
+    padding: 40px 15px;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .goldvine,
+  .school {
+    font-size: 1.5rem;
+    text-align: center;
+    
+  }
+  
+  
+  .contact-area {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .bottom-header {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    flex-direction: column;
+    transition: left 0.4s;
+    z-index: 1000;
+  }
+
+  .bottom-header.active {
+    left: 0;
+  }
+
+  .directors {
+    flex-direction: column;
+  }
+
+  .slider-container {
+    max-width: 100%;
+  }
+
+  .director-box,
+  .proprietress-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .directors img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .director-text,
+  .proprietress-text {
+    max-width: 100%;
+  }
+
+  .proprietress-box {
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+  }
+}
+
+
+
+/* =========================
+   SMALL MOBILE (≤ 600px)
+========================= */
+
+@media (max-width: 600px) {
+  
+       .hero {
+    background-size: contain;
+    background-position: center top;
+    height: auto;
+    padding: 40px 15px;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .goldvine,
+  .school {
+    font-size: 1.5rem;
+    text-align: center;
+    
+  }
+  
+  
+  
+  .about {
+    padding: 40px 15px;
+  }
+
+  .about h2 {
+    font-size: 1.8rem;
+  }
+
+  .about h3 {
+    font-size: 1.2rem;
+  }
+
+  .about .paragraph {
+    font-size: 0.95rem;
+  }
+
+  .core-container {
+    padding: 30px 20px;
+    border-radius: 8px;
+  }
+
+  .core-values h2 {
+    font-size: 1.7rem;
+  }
+
+  .core-list li {
+    font-size: 0.95rem;
+    padding-left: 34px;
+  }
+
+  .admission-box {
+    padding: 30px 20px;
+  }
+
+  .admission-box h2 {
+    font-size: 1.7rem;
+  }
+}
+
+
+
+/* =========================
+   EXTRA SMALL (≤ 375px)
+========================= */
+
+@media (max-width: 375px) {
+  .director-box,
+  .director-box.reverse {
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 14px;
+    gap: 18px;
+  }
+
+  .director-box img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .director-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .director-text h3 {
+    font-size: 1.3rem;
+  }
+
+  .director-text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .hero {
+    background-size: contain;
+    background-position: center top;
+    height: auto;
+    padding: 40px 15px;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .goldvine,
+  .school {
+    font-size: 1.5rem;
+    text-align: center;
+    
+  }
+
+  .school {
+
+    margin-right: 0.5rem;
+  }
+
+  .logo-area {
+    margin-left: -30px;
+  }
+}
+
+
+
+/* =========================
+   TINY SCREENS (≤ 320px)
+========================= */
+
+@media (max-width: 320px) {
+  .director-box,
+  .director-box.reverse {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 12px;
+    gap: 15px;
+  }
+
+  .director-box img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .director-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .director-text p {
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  .hero {
+    background-size: contain;
+    background-position: center top;
+    height: auto;
+    padding: 35px 12px;
+  }
+
+  .goldvine,
+  .school {
+    font-size: 1.5rem;
+  }
+}
