@@ -130,7 +130,7 @@ html {
     background: rgba(255,255,255,0.6);
     border-radius: 10px;
     padding: 20px;
-    max-width: 400px;
+    max-width: 25rem;
 }
 
 .hero-content h2 {
@@ -589,5 +589,6 @@ footer {
   text-align: center;
   padding: 15px;
 }
+
 
 
