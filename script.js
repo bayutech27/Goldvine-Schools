@@ -1,9 +1,20 @@
 const hamburger = document.getElementById("hamburger");
 const nav = document.getElementById("nav");
+const closeNav = document.getElementById("closeNav");
 
 hamburger.addEventListener("click", () => {
   nav.classList.toggle("active");
+  hamburger.style.display = "none";
 });
+
+closeNav.addEventListener('click',() => {
+nav.classList.toggle("active");
+hamburger.style.display = "block";
+
+});
+
+
+
 
 
 

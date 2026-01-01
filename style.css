@@ -83,18 +83,43 @@ html {
 }
 
 .hamburger:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 /* NAV */
+
 .bottom-header {
+  position: relative;
   display: flex;
   justify-content: center;
   background: #4682b4;
+  flex-wrap: wrap;
 }
 
+/* CLOSE BUTTON */
+.nav-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+  .nav-close {
+    display: none;
+  }
+
+.nav-close:hover {
+  color: gold;
+}
+
+
+
 .bottom-header a {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
   color: white;
   padding: 15px 20px;
   text-decoration: none;
@@ -130,7 +155,7 @@ html {
     background: rgba(255,255,255,0.6);
     border-radius: 10px;
     padding: 20px;
-    max-width: 25rem;
+    max-width: 400px;
 }
 
 .hero-content h2 {
@@ -589,6 +614,5 @@ footer {
   text-align: center;
   padding: 15px;
 }
-
 
 
